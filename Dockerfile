@@ -1,5 +1,7 @@
 FROM ubuntu:24.04
 
+RUN apt-get install -y curl
+
 RUN curl -sSf https://install.surrealdb.com > surreal_installer.sh
 
 ARG SURREAL_VERSION
